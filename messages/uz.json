@@ -169,6 +169,10 @@
       "success": {
         "title": "Ajoyib!",
         "message": "Xabaringiz muvaffaqiyatli yuborildi.\nTez orada siz bilan bog'lanamiz!"
+      },
+      "error": {
+        "title": "Nimadir noto'g'ri ketdi",
+        "message": "So'rovingizni yuborib bo'lmadi. Qayta urinib ko'ring yoki bizga to'g'ridan-to'g'ri qo'ng'iroq qiling."
       }
     },
     "info": {
