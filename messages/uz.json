@@ -1,0 +1,375 @@
+{
+  "navbar": {
+    "links": {
+      "home": "Bosh sahifa",
+      "about": "Biz haqimizda",
+      "catalog": "Katalog",
+      "payment": "To'lov va yetkazib berish",
+      "services": "Xizmatlar",
+      "contacts": "Aloqa",
+      "gallery": "Bizning ishlar",
+      "discounts": "Aksiyalar",
+      "licenses": "Litsenziyalar va sertifikatlar"
+    },
+    "search": "Qidiruv"
+  },
+  "home": {
+    "benefits": {
+      "title": "Biz bilan ishlashning afzalliklari",
+      "cards": [
+        {
+          "title": "Ko'p yillik ish tajribasi",
+          "description": "Biz 2016 yildan beri ushbu sohada ishlaymiz va ishonchli hamkor sifatida obro'ga egamiz"
+        },
+        {
+          "title": "Arzon narxlar",
+          "description": "Biz tovarlarni Xitoydan ishlab chiqaruvchilardan bevosita xarid qilamiz"
+        },
+        {
+          "title": "Mahsulot sifati",
+          "description": "Biz sifat uchun javobgarmiz va mahsulotga kafolat beramiz"
+        },
+        {
+          "title": "Istalgan joyga yetkazib berish",
+          "description": "Biz tovarlarni O'zbekistonning barcha hududlariga yetkazib beramiz"
+        }
+      ]
+    },
+    "catalog": {
+      "title": "Mahsulotlar katalogi"
+    },
+    "gallery": {
+      "title": "Foto galereya",
+      "showAll": "Barchasini ko'rsatish"
+    },
+    "contactBanner": {
+      "text": "Savollaringiz bormi? Arizangizni qoldiring va biz siz bilan bog'lanamiz!",
+      "button": "Ariza qoldirish"
+    }
+  },
+  "products": {
+    "catalogTitle": "Mahsulotlar katalogi",
+    "catalogProducts": [
+      "Suv tozalash filtrlari",
+      "Gazlangan suv uchun uskunalar",
+      "Kvartiralar va uylar uchun maishiy filtrlar",
+      "Suv dispenserlari (kulerlar)",
+      "Suv filtrlari uchun ehtiyot qismlar",
+      "Boshqa tovarlar va uskunalar"
+    ],
+    "catalog1": "Suv tozalash filtrlari",
+    "catalog2": "Filtrlar uchun ehtiyot qismlar",
+    "catalog3": "Avtomoykalarga suv filtrlari",
+    "catalog4": "Sanoat korxonalari uchun suv filtrlari",
+    "catalog5": "Sana printerlari",
+    "catalog6": "Issiqxonalar uchun filtrlar",
+    "catalog7": "Etiketkalash apparatlari",
+    "catalog8": "Faollashtirilgan ko'mir",
+    "recommended1": "Suv filtri",
+    "recommended2": "Faollashtirilgan ko'mir",
+    "recommended3": "Oldindan tozalash filtri",
+    "recommended4": "Sana printeri",
+    "recommended5": "Etiketkalash apparati"
+  },
+  "about": {
+    "title": "Biz haqimizda",
+    "accordion": {
+      "company": {
+        "title": "Atlant Fortuna",
+        "paragraph1": "\"Atlant Fortuna\" MChJ 2016-yilda O'zbekiston bozoriga yuqori texnologiyali va innovatsion suv tozalash usullarini joriy etish uchun tashkil etilgan. Kompaniyamizning asosiy mahsuloti teskari osmos texnologiyasiga asoslangan suv tozalash tizimlari bo'lib, bu hozirgi kunda suv tozalashda eng zamonaviy va ilg'or texnologiya hisoblanadi. Biz xom suvning ifloslanish darajasidan va buyurtmachining yakuniy suvga qo'ygan talablariga asoslanib, turli xil konfiguratsiya va komplektatsiyalardagi tizimlarni ishlab chiqarishga qodiramiz.",
+        "paragraph2": "\"Atlant Fortuna\" MChJ O'zbekistonda soatiga 50000 litrdan ortiq quvvatga ega suv tozalash tizimlarini ishlab chiqarishni joriy etgan birinchi kompaniyadir. Tashkil etilgan vaqtdan boshlab kompaniya soatiga 1000 litrdan 50000 litrgacha bo'lgan quvvatdagi 100 dan ortiq suv tozalash loyihalarini amalga oshirdi. Bizning suv tozalash tizimlarimiz O'zbekiston Respublikasi xalq xo'jaligining ko'plab tarmoqlarida muvaffaqiyatli ishlaydi.",
+        "paragraph3": "Shuningdek, biz suv tozalash tizimlariga qo'shimcha qismlarni, masalan, teskari osmos membranalari, ultrafiltrlash membranalari, kartrijli filtrlar, nasoslar, ionalmashinuv qatronlari va boshqa qo'shimcha qismlarni yetkazib beramiz. Ular Hydranautics (AQSH), TORAY (Yaponiya), DOW Filmtec (AQSH), VONTRON (Xitoy), CSM (Janubiy Koreya) va boshqalar kabi suv tozalash sohasida yetakchi jahon brendlari tomonidan ishlab chiqarilgan."
+      },
+      "partners": {
+        "title": "Bizning hamkorlarimiz",
+        "list": [
+          "Navoiy kon-metallurgiya kombinati kompaniyasi",
+          "Enter Engineering PTE LTD kompaniyasi",
+          "Eriell Uzbekistan kompaniyasi",
+          "UZBAT AJ British American Tobacco",
+          "UZAUTOMOTORS POWERTRAIN AJ",
+          "AKFA ASSEMBLY MChJ AKFA savdo belgisi",
+          "Artel Electronics Manufacturing MChJ ARTEL savdo belgisi",
+          "Knauf Gips Buxoro MChJ",
+          "Jizzah Organic xoldingi",
+          "Muborak neft-gaz qazib olish boshqarmasi kompaniyasi",
+          "Buxoro Agroklaster DZZ MChJ Lattico savdo belgisi",
+          "Dehqonobod kaliy zavodi MChJ",
+          "Qo'ng'irot soda zavodi MChJ",
+          "Obod mahalla va Obod qishloq loyihalari bo'yicha xususiy pudratchi tashkilotlar",
+          "Silver-Vita MChJ Silver ichimlik suvi",
+          "Real best hamkor MChJ Zam-zam ichimlik suvi",
+          "Zarafshon Golden Group MChJ",
+          "Yangi Asr FX Sof IN savdo belgisi",
+          "MYUNG SUNG PLACON LTD kompaniyasining O'zbekistondagi vakolatxonasi (Janubiy Koreya)",
+          "Asya Sera kompaniyasining O'zbekistondagi vakolatxonasi (Turkiya)",
+          "Xususiy issiqxona xo'jaliklari",
+          "Xususiy ichimlik suvi ishlab chiqaruvchilar va boshqa ko'plab kompaniyalar"
+        ]
+      },
+      "offices": {
+        "title": "Ofis manzillari",
+        "table": {
+          "office": "Ofis",
+          "location": "Manzil",
+          "main": "Asosiy ofis",
+          "mainAddress": "Buxoro viloyati, Kogon shahri, Mahmud Torobiy ko'chasi, 183",
+          "tashkent": "Toshkent filiali",
+          "tashkentAddress": "Toshkent sh., Chilonzor tumani, Gavhar ko'chasi, 122A/1-uy",
+          "karshi": "Qarshi filiali",
+          "karshiAddress": "Qashqadaryo viloyati, Qarshi sh., Kilichbek-Qo'rg'oncha MSG, Kamandi ko'chasi, 63A-uy",
+          "urgench": "Urganch filiali",
+          "urgenchAddress": "Xorazm viloyati, Urganch tumani, Uchko'prik fuqarolar yig'ini, Farhod ko'chasi, 78"
+        }
+      },
+      "schedule": {
+        "title": "Ish grafigi",
+        "days": {
+          "monday": "Dushanba",
+          "tuesday": "Seshanba",
+          "wednesday": "Chorshanba",
+          "thursday": "Payshanba",
+          "friday": "Juma",
+          "saturday": "Shanba",
+          "sunday": "Yakshanba"
+        },
+        "hours": "Ish vaqti",
+        "break": "Tanaffus",
+        "dayOff": "Dam olish kuni"
+      }
+    }
+  },
+  "category": {
+    "title": "Mahsulotlar katalogi",
+    "pageTitle": "Katalog"
+  },
+  "contact": {
+    "title": "Aloqa",
+    "subtitle": "Boshlashga tayyormisiz? Biz bilan qulay usulda bog'laning",
+    "form": {
+      "title": "Xabar yuborish",
+      "name": {
+        "label": "Ismingiz",
+        "placeholder": "Ismingizni kiriting"
+      },
+      "email": {
+        "label": "Email",
+        "placeholder": "your@email.com"
+      },
+      "phone": {
+        "label": "Telefon",
+        "placeholder": "+998 XX XXX XX XX"
+      },
+      "message": {
+        "label": "Xabar",
+        "placeholder": "Loyihangiz haqida bizga aytib bering..."
+      },
+      "submit": "Xabar yuborish",
+      "submitting": "Yuborilmoqda...",
+      "success": {
+        "title": "Ajoyib!",
+        "message": "Xabaringiz muvaffaqiyatli yuborildi.\nTez orada siz bilan bog'lanamiz!"
+      }
+    },
+    "info": {
+      "office": {
+        "title": "Bizning ofis",
+        "address": "Buxoro viloyati, Kogon shahri\nMahmud Torobiy ko'chasi, 183"
+      },
+      "email": {
+        "title": "Email"
+      },
+      "hours": {
+        "title": "Ish vaqti",
+        "weekdays": "Du - Ju",
+        "saturday": "Shanba",
+        "sunday": "Yakshanba",
+        "dayOff": "Dam olish kuni"
+      }
+    },
+    "team": {
+      "title": "Bizning jamoa",
+      "subtitle": "Bog'lanish uchun mutaxassisni tanlang",
+      "call": "Qo'ng'iroq qilish",
+      "modal": {
+        "title": "Qo'ng'iroq qilasizmi?",
+        "callNow": "Hozir qo'ng'iroq qilish",
+        "cancel": "Bekor qilish"
+      }
+    }
+  },
+  "payment": {
+    "title": "To'lov va yetkazib berish",
+    "hero": {
+      "title1": "To'lov",
+      "title2": "yetkazib berish",
+      "description": "O'zbekiston bo'ylab tovarlarni tez va ishonchli yetkazib berish. Buyurtmani olishning qulay usulini tanlang.",
+      "button": "Batafsil",
+      "safePackaging": "Xavfsiz qadoqlash",
+      "fastDelivery": "Tez yetkazib berish"
+    },
+    "paymentMethods": {
+      "title": "To'lov usullari",
+      "cash": {
+        "title": "Naqd pul",
+        "desc": "Ofislarimizda naqd to'lov",
+        "locations": [
+          "Buxoro, Kogon sh., Mahmud Torobiy ko'chasi, 183",
+          "Toshkent, Chilonzor, Gavhar ko'chasi, 122A1",
+          "Qarshi, Kamandi ko'chasi, 63A",
+          "Urganch, Farhod ko'chasi, 78"
+        ]
+      },
+      "transfer": {
+        "title": "Bank o'tkazmasi",
+        "desc": "Bank orqali naqdsiz to'lov",
+        "details": [
+          "\"Atlant Fortuna\" MChJ",
+          "Hisob raqami: 20208000800705643001",
+          "\"Uzpromstroybank\" AKB",
+          "MFO: 00440 | INN: 304440114",
+          "100% oldindan to'lov"
+        ]
+      },
+      "terminal": {
+        "title": "UzCard / HUMO terminali",
+        "desc": "Sotish ofisida karta orqali to'lov",
+        "tags": ["UzCard", "HUMO", "Oniy to'lov"]
+      },
+      "online": {
+        "title": "Onlayn to'lov (Click)",
+        "desc": "Click orqali tez onlayn to'lov",
+        "steps": [
+          "Click qidiruvida \"ATLANT FORTUNA AF\" ni kiriting",
+          "Kompaniyani tanlang",
+          "Buyurtma raqamini, telefon va summani kiriting",
+          "To'lang",
+          "Tasdiqlash uchun qo'ng'iroqni kuting"
+        ]
+      }
+    },
+    "deliveryMethods": {
+      "title": "Yetkazib berish usullari",
+      "courier": {
+        "title": "BTS kuryer yetkazib berish",
+        "price": "100 000 so'm",
+        "desc": "O'zbekistonning barcha hududlariga yetkazib berish",
+        "calculateCost": "Narxni hisoblash",
+        "tags": ["Tez yetkazib berish", "Yukni kuzatish", "Barcha hududlar"]
+      },
+      "pickup": {
+        "title": "O'zi olib ketish",
+        "price": "Bepul",
+        "desc": "Tovarn iistalgan ofisdan olib keting",
+        "locations": ["Buxoro, Kogon", "Toshkent", "Qarshi", "Urganch"]
+      },
+      "transport": {
+        "title": "Transport kompaniyasi",
+        "price": "1 000 000 so'mdan",
+        "desc": "Yirik uskunalarni yetkazib berish",
+        "tags": ["Bepul yuklash", "Tushirish xaridorning hisobiga", "Yuk transporti"]
+      }
+    }
+  },
+  "services": {
+    "title": "Bizning xizmatlarimiz",
+    "underConstruction": "Sahifa ishlab chiqilmoqda"
+  },
+  "discounts": {
+    "title": "Aksiyalar va maxsus takliflar",
+    "underConstruction": "Sahifa ishlab chiqilmoqda"
+  },
+  "licenses": {
+    "title": "Litsenziya Sertifikatlari",
+    "subtitle": "Bizning rasmiy ruxsatlar va akkreditatsiyalarimiz",
+    "buttons": {
+      "open": "Ochish",
+      "download": "PDF yuklab olish",
+      "openNewTab": "Yangi oynada ochish"
+    }
+  },
+  "gallery": {
+    "title": "Foto galereya",
+    "image": "Loyiha"
+  },
+  "errors": {
+    "title": "Nimadir noto'g'ri ketdi!",
+    "description": "Sahifani yuklashda xatolik yuz berdi. Iltimos, qayta urinib ko'ring.",
+    "retry": "Qayta urinib ko'ring",
+    "notFoundTitle": "Sahifa topilmadi",
+    "notFoundDescription": "Kechirasiz, siz qidirayotgan sahifa mavjud emas yoki ko'chirilgan.",
+    "backHome": "Bosh sahifaga qaytish"
+  },
+  "loading": "Yuklanmoqda...",
+  "catalog": {
+    "title": "Mahsulotlar katalogi",
+    "subtitle": "Professional suv tozalash uskunalari",
+    "filter": {
+      "all": "Barcha mahsulotlar",
+      "byCategory": "Turkum bo'yicha filtrlash"
+    },
+    "categories": {
+      "WATER_PURIFICATION_FILTERS": "Suv tozalash filtrlari",
+      "CARBONATED_WATER_EQUIPMENT": "Gazirlangan suv uskunalari",
+      "HOUSEHOLD_WATER_FILTERS": "Uy-joy uchun suv filtrlari",
+      "WATER_DISPENSERS_COOLERS": "Suv dispenserlari va sovutgichlar",
+      "WATER_FILTER_SPARE_PARTS": "Suv filtrlari ehtiyot qismlari",
+      "OTHER_PRODUCTS_EQUIPMENT": "Boshqa mahsulotlar va uskunalar"
+    },
+    "product": {
+      "inStock": "Omborda mavjud",
+      "outOfStock": "Omborda yo'q",
+      "buyButton": "Sotib olish",
+      "addToCart": "Savatga qo'shish",
+      "viewDetails": "Batafsil"
+    },
+    "view": {
+      "grid": "To'r",
+      "list": "Ro'yxat"
+    },
+    "noProducts": "Mahsulotlar topilmadi",
+    "productsCount": "{count} mahsulot"
+  },
+  "product": {
+    "loading": "Yuklanmoqda...",
+    "notFound": "Mahsulot topilmadi",
+    "brand": "Brend",
+    "articleNumber": "Artikul",
+    "inStock": "Omborda mavjud",
+    "outOfStock": "Omborda yo'q",
+    "perUnit": "dona",
+    "payment": "To'lov",
+    "delivery": "Yetkazib berish",
+    "buyButton": "Sotib olish",
+    "addToCart": "Savatga qo'shish",
+    "contact": "Bog'lanish",
+    "descriptionTitle": "Ta'rif",
+    "noDescription": "Ta'rif mavjud emas",
+    "paymentMethods": {
+      "cash": "Naqd pul",
+      "homo": "HUMO terminali",
+      "uzcard": "UzCard terminali",
+      "online": "Onlayn to'lov",
+      "bankTransfer": "Bank o'tkazmasi",
+      "notSpecified": "Ko'rsatilmagan"
+    }
+  },
+  "footer": {
+    "callToAction": {
+      "title": "Savollaringiz bormi?",
+      "description": "Arizangizni qoldiring va biz tez orada siz bilan bog'lanamiz",
+      "button": "Ariza qoldirish"
+    },
+    "social": {
+      "title": "Ijtimoiy tarmoqlarda biz"
+    },
+    "contacts": {
+      "title": "Aloqa",
+      "address": "Buxoro viloyati, Kogon shahri, Mahmud Torobiy ko'chasi, 183",
+      "phone": "+998 99 707 00 59",
+      "email": "atlant-fortuna@mail.ru"
+    },
+    "copyright": "© 2025 \"Atlant Fortuna\" MChJ",
+    "createWebsite": "Sayt yaratish bepul"
+  }
+}

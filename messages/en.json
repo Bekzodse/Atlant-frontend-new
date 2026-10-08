@@ -1,0 +1,375 @@
+{
+  "navbar": {
+    "links": {
+      "home": "Home",
+      "about": "About",
+      "catalog": "Catalog",
+      "payment": "Payment & Delivery",
+      "services": "Services",
+      "contacts": "Contacts",
+      "gallery": "Our Works",
+      "discounts": "Discounts",
+      "licenses": "Licenses & Certificates"
+    },
+    "search": "Search"
+  },
+  "home": {
+    "benefits": {
+      "title": "Advantages of Working With Us",
+      "cards": [
+        {
+          "title": "Years of Experience",
+          "description": "We have been working in this field since 2016 and have a reputation as a reliable partner"
+        },
+        {
+          "title": "Low Prices",
+          "description": "We purchase goods directly from manufacturers in China"
+        },
+        {
+          "title": "Product Quality",
+          "description": "We are responsible for quality and provide a warranty on products"
+        },
+        {
+          "title": "Delivery Anywhere",
+          "description": "We deliver goods to all regions of Uzbekistan"
+        }
+      ]
+    },
+    "catalog": {
+      "title": "Product Catalog"
+    },
+    "gallery": {
+      "title": "Photo Gallery",
+      "showAll": "Show All"
+    },
+    "contactBanner": {
+      "text": "Have questions? Leave a request and we will contact you!",
+      "button": "Request a Call"
+    }
+  },
+  "products": {
+    "catalogTitle": "Product Catalog",
+    "catalogProducts": [
+      "Water Filtration Systems",
+      "Carbonated Water Equipment",
+      "Household Filters for Apartments and Houses",
+      "Water Dispensers (Coolers)",
+      "Water Filter Spare Parts",
+      "Other Goods and Equipment"
+    ],
+    "catalog1": "Water Filtration Systems",
+    "catalog2": "Filter Spare Parts",
+    "catalog3": "Water Filters for Car Washes",
+    "catalog4": "Industrial Water Filters",
+    "catalog5": "Date Printers",
+    "catalog6": "Filters for Greenhouses",
+    "catalog7": "Labeling Machines",
+    "catalog8": "Activated Carbon",
+    "recommended1": "Water Filter",
+    "recommended2": "Activated Carbon",
+    "recommended3": "Pre-filter",
+    "recommended4": "Date Printer",
+    "recommended5": "Labeling Machine"
+  },
+  "about": {
+    "title": "About Us",
+    "accordion": {
+      "company": {
+        "title": "Atlant Fortuna",
+        "paragraph1": "Atlant Fortuna LLC was established in 2016 to introduce high-tech and innovative water treatment methods to the Uzbekistan market. Our company's main product is water purification systems based on reverse osmosis technology, which is currently the most modern and advanced technology in water treatment. We have the ability to produce systems of various configurations and equipment based on the degree of raw water contamination and customer requirements for the final water.",
+        "paragraph2": "Atlant Fortuna LLC is the first company in Uzbekistan to introduce the production of water purification systems with a capacity of more than 50,000 liters per hour. Since its inception, the company has launched more than 100 water treatment projects with capacities ranging from 1,000 to 50,000 liters per hour. Our water purification systems operate successfully in many sectors of the economy of the Republic of Uzbekistan.",
+        "paragraph3": "We also supply components for water treatment systems such as reverse osmosis membranes, ultrafiltration membranes, cartridge filters, pumps, ion exchange resins and other components manufactured by world-leading water treatment brands such as Hydranautics (USA), TORAY (Japan), DOW Filmtec (USA), VONTRON (China), CSM (South Korea) and others."
+      },
+      "partners": {
+        "title": "Our Partners",
+        "list": [
+          "Navoi Mining and Metallurgical Company",
+          "Enter Engineering PTE LTD",
+          "Eriell Uzbekistan",
+          "British American Tobacco JSC UZBAT",
+          "UZAUTOMOTORS POWERTRAIN JSC",
+          "AKFA ASSEMBLY LLC (AKFA trademark)",
+          "Artel Electronics Manufacturing LLC (ARTEL trademark)",
+          "Knauf Gips Bukhara LLC",
+          "Jizzah Organic Holding",
+          "Mubarek Oil and Gas Production Department",
+          "Buxoro Agroklaster DZZ LLC (Lattico trademark)",
+          "Dekhkanabad Potash Plant LLC",
+          "Kungrad Soda Plant LLC",
+          "Private contractors for Obod Mahalla and Obod Kishloq projects",
+          "Silver-Vita LLC (Silver drinking water)",
+          "Real best hamkor LLC (Zam-zam drinking water)",
+          "Zarafshon Golden Group LLC",
+          "Yangi Asr Farm (Sof IN trademark)",
+          "MYUNG SUNG PLACON LTD Representative Office (South Korea)",
+          "Asya Sera Representative Office (Turkey)",
+          "Private greenhouse farms",
+          "Private drinking water producers and many other companies"
+        ]
+      },
+      "offices": {
+        "title": "Office Addresses",
+        "table": {
+          "office": "Office",
+          "location": "Location",
+          "main": "Main Office",
+          "mainAddress": "Bukhara region, Kagan city, Mahmud Torobiy str., 183",
+          "tashkent": "Tashkent Branch",
+          "tashkentAddress": "Tashkent city, Chilanzar district, Gavhar str., building 122A/1",
+          "karshi": "Karshi Branch",
+          "karshiAddress": "Kashkadarya region, Karshi city, Kilichbek-Kurgoncha MSG, Kamandi str., building 63A",
+          "urgench": "Urgench Branch",
+          "urgenchAddress": "Khorezm region, Urgench district, Uchkuprik citizens' meeting, Farhod str., 78"
+        }
+      },
+      "schedule": {
+        "title": "Working Hours",
+        "days": {
+          "monday": "Monday",
+          "tuesday": "Tuesday",
+          "wednesday": "Wednesday",
+          "thursday": "Thursday",
+          "friday": "Friday",
+          "saturday": "Saturday",
+          "sunday": "Sunday"
+        },
+        "hours": "Hours",
+        "break": "Break",
+        "dayOff": "Day Off"
+      }
+    }
+  },
+  "category": {
+    "title": "Catalog",
+    "pageTitle": "Catalog"
+  },
+  "contact": {
+    "title": "Contacts",
+    "subtitle": "Ready to start? Contact us in any convenient way",
+    "form": {
+      "title": "Send a Message",
+      "name": {
+        "label": "Your Name",
+        "placeholder": "Enter your name"
+      },
+      "email": {
+        "label": "Email",
+        "placeholder": "your@email.com"
+      },
+      "phone": {
+        "label": "Phone",
+        "placeholder": "+998 XX XXX XX XX"
+      },
+      "message": {
+        "label": "Message",
+        "placeholder": "Tell us about your project..."
+      },
+      "submit": "Send Message",
+      "submitting": "Sending...",
+      "success": {
+        "title": "Great!",
+        "message": "Your message has been sent successfully.\nWe will contact you shortly!"
+      }
+    },
+    "info": {
+      "office": {
+        "title": "Our Office",
+        "address": "Bukhara region, Kagan city\nMahmud Torobiy str., 183"
+      },
+      "email": {
+        "title": "Email"
+      },
+      "hours": {
+        "title": "Working Hours",
+        "weekdays": "Mon - Fri",
+        "saturday": "Saturday",
+        "sunday": "Sunday",
+        "dayOff": "Day Off"
+      }
+    },
+    "team": {
+      "title": "Our Team",
+      "subtitle": "Choose a specialist to contact",
+      "call": "Call",
+      "modal": {
+        "title": "Make a Call?",
+        "callNow": "Call Now",
+        "cancel": "Cancel"
+      }
+    }
+  },
+  "payment": {
+    "title": "Payment & Delivery",
+    "hero": {
+      "title1": "Payment",
+      "title2": "Delivery",
+      "description": "Fast and reliable delivery of goods throughout Uzbekistan. Choose a convenient way to receive your order.",
+      "button": "Learn More",
+      "safePackaging": "Safe Packaging",
+      "fastDelivery": "Fast Delivery"
+    },
+    "paymentMethods": {
+      "title": "Payment Methods",
+      "cash": {
+        "title": "Cash",
+        "desc": "Cash payment at our offices",
+        "locations": [
+          "Bukhara, Kagan city, Mahmud Torobiy str., 183",
+          "Tashkent, Chilanzar, Gavhar str., 122A1",
+          "Karshi, Kamandi str., 63A",
+          "Urgench, Farhod str., 78"
+        ]
+      },
+      "transfer": {
+        "title": "Bank Transfer",
+        "desc": "Non-cash payment through bank",
+        "details": [
+          "Atlant Fortuna LLC",
+          "Account: 20208000800705643001",
+          "Bank: Uzpromstroybank",
+          "Bank Code: 00440 | TIN: 304440114",
+          "100% Prepayment"
+        ]
+      },
+      "terminal": {
+        "title": "UzCard / HUMO Terminal",
+        "desc": "Card payment at sales office",
+        "tags": ["UzCard", "HUMO", "Instant Payment"]
+      },
+      "online": {
+        "title": "Online Payment (Click)",
+        "desc": "Fast online payment via Click",
+        "steps": [
+          "Enter \"ATLANT FORTUNA AF\" in Click search",
+          "Select the company",
+          "Enter order number, phone and amount",
+          "Pay",
+          "Wait for confirmation call"
+        ]
+      }
+    },
+    "deliveryMethods": {
+      "title": "Delivery Methods",
+      "courier": {
+        "title": "BTS Courier Delivery",
+        "price": "100,000 UZS",
+        "desc": "Delivery to all regions of Uzbekistan",
+        "calculateCost": "Calculate Cost",
+        "tags": ["Fast Delivery", "Cargo Tracking", "All Regions"]
+      },
+      "pickup": {
+        "title": "Pickup",
+        "price": "Free",
+        "desc": "Pick up goods at any office",
+        "locations": ["Bukhara, Kagan", "Tashkent", "Karshi", "Urgench"]
+      },
+      "transport": {
+        "title": "Transport Company",
+        "price": "from 1,000,000 UZS",
+        "desc": "Delivery of large equipment",
+        "tags": ["Free Loading", "Unloading at Buyer's Expense", "Freight Transport"]
+      }
+    }
+  },
+  "services": {
+    "title": "Our Services",
+    "underConstruction": "Page under construction"
+  },
+  "discounts": {
+    "title": "Discounts & Special Offers",
+    "underConstruction": "Page under construction"
+  },
+  "licenses": {
+    "title": "License Certificates",
+    "subtitle": "Our official permits and accreditations",
+    "buttons": {
+      "open": "Open",
+      "download": "Download PDF",
+      "openNewTab": "Open in New Tab"
+    }
+  },
+  "gallery": {
+    "title": "Photo Gallery",
+    "image": "Project"
+  },
+  "errors": {
+    "title": "Something went wrong!",
+    "description": "An error occurred while loading the page. Please try again.",
+    "retry": "Try Again",
+    "notFoundTitle": "Page Not Found",
+    "notFoundDescription": "Sorry, the page you are looking for does not exist or has been moved.",
+    "backHome": "Back to Home"
+  },
+  "loading": "Loading...",
+  "catalog": {
+    "title": "Product Catalog",
+    "subtitle": "Professional water purification equipment",
+    "filter": {
+      "all": "All Products",
+      "byCategory": "Filter by Category"
+    },
+    "categories": {
+      "WATER_PURIFICATION_FILTERS": "Water Purification Filters",
+      "CARBONATED_WATER_EQUIPMENT": "Carbonated Water Equipment",
+      "HOUSEHOLD_WATER_FILTERS": "Household Water Filters",
+      "WATER_DISPENSERS_COOLERS": "Water Dispensers & Coolers",
+      "WATER_FILTER_SPARE_PARTS": "Water Filter Spare Parts",
+      "OTHER_PRODUCTS_EQUIPMENT": "Other Products & Equipment"
+    },
+    "product": {
+      "inStock": "In Stock",
+      "outOfStock": "Out of Stock",
+      "buyButton": "Buy",
+      "addToCart": "Add to Cart",
+      "viewDetails": "View Details"
+    },
+    "view": {
+      "grid": "Grid",
+      "list": "List"
+    },
+    "noProducts": "No products found",
+    "productsCount": "{count} products"
+  },
+  "product": {
+    "loading": "Loading...",
+    "notFound": "Product not found",
+    "brand": "Brand",
+    "articleNumber": "Article Number",
+    "inStock": "In Stock",
+    "outOfStock": "Out of Stock",
+    "perUnit": "pc",
+    "payment": "Payment",
+    "delivery": "Delivery",
+    "buyButton": "Buy",
+    "addToCart": "Add to Cart",
+    "contact": "Contact Us",
+    "descriptionTitle": "Description",
+    "noDescription": "No description available",
+    "paymentMethods": {
+      "cash": "Cash",
+      "homo": "HUMO Terminal",
+      "uzcard": "UzCard Terminal",
+      "online": "Online Payment",
+      "bankTransfer": "Bank Transfer",
+      "notSpecified": "Not specified"
+    }
+  },
+  "footer": {
+    "callToAction": {
+      "title": "Have questions?",
+      "description": "Request a call and we will contact you shortly",
+      "button": "Request a Call"
+    },
+    "social": {
+      "title": "Follow Us on Social Media"
+    },
+    "contacts": {
+      "title": "Contacts",
+      "address": "Bukhara region, Kagan city, Mahmud Torobiy str., 183",
+      "phone": "+998 99 707 00 59",
+      "email": "atlant-fortuna@mail.ru"
+    },
+    "copyright": "© 2025 Atlant Fortuna LLC",
+    "createWebsite": "Create a website for free"
+  }
+}
