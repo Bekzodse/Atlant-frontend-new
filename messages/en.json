@@ -169,6 +169,10 @@
       "success": {
         "title": "Great!",
         "message": "Your message has been sent successfully.\nWe will contact you shortly!"
+      },
+      "error": {
+        "title": "Something went wrong",
+        "message": "We couldn't send your request. Please try again or call us directly."
       }
     },
     "info": {

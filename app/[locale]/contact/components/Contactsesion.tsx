@@ -6,6 +6,7 @@ import { useTranslations } from "next-intl";
 import { useParams } from "next/navigation";
 import useSWR from "swr";
 import { fetchTeamMembers, TeamMemberResponseDTO } from "@/lib/api/team";
+import { submitContactRequest } from "@/lib/api/contact";
 
 const ContactSection = () => {
     const t = useTranslations("contact");
@@ -19,9 +20,10 @@ const ContactSection = () => {
     });
     const [isSubmitting, setIsSubmitting] = useState(false);
     const [submitted, setSubmitted] = useState(false);
+    const [error, setError] = useState(false);
 
     // Fetch team members with SWR
-    const { data: teamMembers, error, isLoading } = useSWR(
+    const { data: teamMembers, error: teamError, isLoading } = useSWR(
         `/api/team/public?locale=${locale}`,
         () => fetchTeamMembers(locale),
         {
@@ -46,13 +48,18 @@ const ContactSection = () => {
     const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
         e.preventDefault();
         setIsSubmitting(true);
+        setError(false);
 
-        setTimeout(() => {
-            setIsSubmitting(false);
+        try {
+            await submitContactRequest(formData, locale);
             setSubmitted(true);
             setFormData({ name: "", phone: "", message: "" });
             setTimeout(() => setSubmitted(false), 5000);
-        }, 2000);
+        } catch {
+            setError(true);
+        } finally {
+            setIsSubmitting(false);
+        }
     };
 
     const handleChange = (e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
@@ -77,6 +84,13 @@ const ContactSection = () => {
                     {/* Contact Form */}
                     <div className="bg-white rounded-3xl p-8 shadow-xl border-2" style={{ borderColor: "#0A7EED" }}>
                         <h2 className="text-3xl font-bold text-gray-900 mb-6">{t("form.title")}</h2>
+
+                        {error && (
+                            <div className="mb-6 rounded-2xl border-2 border-red-300 bg-red-50 p-4 text-red-700">
+                                <p className="font-semibold">{t("form.error.title")}</p>
+                                <p className="text-sm">{t("form.error.message")}</p>
+                            </div>
+                        )}
 
                         {submitted ? (
                             <div className="text-center py-16">
