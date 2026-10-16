@@ -121,3 +121,22 @@
     @apply bg-background text-foreground;
   }
 }
+
+.contact-phone-input {
+  display: flex;
+  align-items: center;
+}
+
+.contact-phone-input .PhoneInputInput {
+  background: transparent;
+  border: none;
+  outline: none;
+  font: inherit;
+  color: inherit;
+  min-width: 0;
+  flex: 1;
+}
+
+.contact-phone-input .PhoneInputCountry {
+  margin-right: 0.75rem;
+}

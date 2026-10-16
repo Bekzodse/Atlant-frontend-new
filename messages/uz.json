@@ -158,7 +158,8 @@
       },
       "phone": {
         "label": "Telefon",
-        "placeholder": "+998 XX XXX XX XX"
+        "placeholder": "+998 XX XXX XX XX",
+        "invalid": "Telefon raqamini to'g'ri kiriting"
       },
       "message": {
         "label": "Xabar",
@@ -238,7 +239,11 @@
       "terminal": {
         "title": "UzCard / HUMO terminali",
         "desc": "Sotish ofisida karta orqali to'lov",
-        "tags": ["UzCard", "HUMO", "Oniy to'lov"]
+        "tags": [
+          "UzCard",
+          "HUMO",
+          "Oniy to'lov"
+        ]
       },
       "online": {
         "title": "Onlayn to'lov (Click)",
@@ -259,19 +264,32 @@
         "price": "100 000 so'm",
         "desc": "O'zbekistonning barcha hududlariga yetkazib berish",
         "calculateCost": "Narxni hisoblash",
-        "tags": ["Tez yetkazib berish", "Yukni kuzatish", "Barcha hududlar"]
+        "tags": [
+          "Tez yetkazib berish",
+          "Yukni kuzatish",
+          "Barcha hududlar"
+        ]
       },
       "pickup": {
         "title": "O'zi olib ketish",
         "price": "Bepul",
         "desc": "Tovarn iistalgan ofisdan olib keting",
-        "locations": ["Buxoro, Kogon", "Toshkent", "Qarshi", "Urganch"]
+        "locations": [
+          "Buxoro, Kogon",
+          "Toshkent",
+          "Qarshi",
+          "Urganch"
+        ]
       },
       "transport": {
         "title": "Transport kompaniyasi",
         "price": "1 000 000 so'mdan",
         "desc": "Yirik uskunalarni yetkazib berish",
-        "tags": ["Bepul yuklash", "Tushirish xaridorning hisobiga", "Yuk transporti"]
+        "tags": [
+          "Bepul yuklash",
+          "Tushirish xaridorning hisobiga",
+          "Yuk transporti"
+        ]
       }
     }
   },
@@ -370,10 +388,52 @@
     "contacts": {
       "title": "Aloqa",
       "address": "Buxoro viloyati, Kogon shahri, Mahmud Torobiy ko'chasi, 183",
-      "phone": "+998 99 707 00 59",
-      "email": "atlant-fortuna@mail.ru"
+      "phones": [
+        "+998 78 707 80 90",
+        "+998 99 707 29 99",
+        "+998 99 707 33 44"
+      ],
+      "email": "atlantfortuna@gmail.com"
     },
     "copyright": "© 2025 \"Atlant Fortuna\" MChJ",
-    "createWebsite": "Sayt yaratish bepul"
+    "createWebsite": ""
+  },
+  "quickOrder": {
+    "title": "Sotib olmoqchiman",
+    "subtitle": "Kontaktlaringizni qoldiring, biz siz bilan bog'lanamiz",
+    "name": {
+      "label": "Ismingiz",
+      "placeholder": "Ismingizni kiriting"
+    },
+    "phone": {
+      "label": "Telefon",
+      "placeholder": "+998 XX XXX XX XX",
+      "invalid": "To'g'ri telefon raqamini kiriting"
+    },
+    "message": {
+      "label": "Izoh (ixtiyoriy)",
+      "placeholder": "Sizni nima qiziqtiradi?"
+    },
+    "submit": "Yuborish",
+    "submitting": "Yuborilmoqda...",
+    "success": {
+      "title": "Rahmat!",
+      "message": "Tez orada siz bilan bog'lanamiz!"
+    },
+    "error": {
+      "title": "Xatolik yuz berdi",
+      "message": "So'rovni yuborib bo'lmadi. Qayta urinib ko'ring yoki bizga qo'ng'iroq qiling."
+    }
+  },
+  "cart": {
+    "title": "Savat",
+    "empty": "Savatingiz bo'sh",
+    "browseCatalog": "Katalogga o'tish",
+    "quantity": "Soni",
+    "remove": "O'chirish",
+    "total": "Jami",
+    "checkout": "So'rov yuborish",
+    "backToCart": "Savatga qaytish",
+    "addedToCart": "Savatga qo'shildi"
   }
 }

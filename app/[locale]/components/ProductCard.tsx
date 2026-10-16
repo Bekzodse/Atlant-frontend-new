@@ -5,6 +5,7 @@ import Link from "next/link";
 import { useTranslations } from "next-intl";
 import { ProductResponseDTO, getPrimaryImage, formatPrice } from "@/lib/api/products";
 import { useParams } from "next/navigation";
+import { useCart } from "@/lib/context/CartContext";
 
 interface ProductCardProps {
   product: ProductResponseDTO;
@@ -15,6 +16,7 @@ const ProductCard: React.FC<ProductCardProps> = ({ product, view = "list" }) => 
   const t = useTranslations("catalog.product");
   const params = useParams();
   const locale = params?.locale as string || 'ru';
+  const { addItem, openCart } = useCart();
 
   const primaryImage = getPrimaryImage(product);
   const formattedPrice = formatPrice(product.price, locale);
@@ -55,13 +57,20 @@ const ProductCard: React.FC<ProductCardProps> = ({ product, view = "list" }) => 
 
           <div className="flex gap-3 mt-3">
             <button
-              onClick={(e) => e.preventDefault()}
+              onClick={(e) => {
+                e.preventDefault();
+                addItem(product);
+                openCart();
+              }}
               className="px-6 py-2 bg-blue-600 text-white rounded-full hover:bg-blue-700 transition-colors"
             >
               {t("buyButton")}
             </button>
             <button
-              onClick={(e) => e.preventDefault()}
+              onClick={(e) => {
+                e.preventDefault();
+                addItem(product);
+              }}
               className="px-6 py-2 border border-gray-300 rounded-full hover:bg-gray-50 transition-colors"
             >
               {t("addToCart")}

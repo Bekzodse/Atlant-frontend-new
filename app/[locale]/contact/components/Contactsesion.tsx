@@ -5,6 +5,8 @@ import Image from "next/image";
 import { useTranslations } from "next-intl";
 import { useParams } from "next/navigation";
 import useSWR from "swr";
+import PhoneInput, { isValidPhoneNumber } from "react-phone-number-input";
+import "react-phone-number-input/style.css";
 import { fetchTeamMembers, TeamMemberResponseDTO } from "@/lib/api/team";
 import { submitContactRequest } from "@/lib/api/contact";
 
@@ -21,6 +23,7 @@ const ContactSection = () => {
     const [isSubmitting, setIsSubmitting] = useState(false);
     const [submitted, setSubmitted] = useState(false);
     const [error, setError] = useState(false);
+    const [phoneError, setPhoneError] = useState(false);
 
     // Fetch team members with SWR
     const { data: teamMembers, error: teamError, isLoading } = useSWR(
@@ -47,6 +50,12 @@ const ContactSection = () => {
 
     const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
         e.preventDefault();
+
+        if (!isValidPhoneNumber(formData.phone)) {
+            setPhoneError(true);
+            return;
+        }
+        setPhoneError(false);
         setIsSubmitting(true);
         setError(false);
 
@@ -127,18 +136,23 @@ const ContactSection = () => {
 
                                 <div>
                                     <label className="block text-sm font-semibold text-gray-900 mb-2">{t("form.phone.label")}</label>
-                                    <input
-                                        type="tel"
-                                        name="phone"
+                                    <PhoneInput
+                                        className="contact-phone-input w-full px-6 py-4 bg-gray-50 border-2 rounded-2xl focus-within:bg-white transition"
+                                        style={{ borderColor: phoneError ? "#DC2626" : "#E5E7EB" }}
+                                        international
+                                        limitMaxLength
+                                        defaultCountry="UZ"
                                         value={formData.phone}
-                                        onChange={handleChange}
+                                        onChange={(value) => {
+                                            setFormData({ ...formData, phone: value ?? "" });
+                                            setPhoneError(false);
+                                        }}
                                         required
                                         placeholder={t("form.phone.placeholder")}
-                                        className="w-full px-6 py-4 bg-gray-50 border-2 rounded-2xl focus:bg-white focus:outline-none transition"
-                                        style={{ borderColor: "#E5E7EB" }}
-                                        onFocus={(e) => e.target.style.borderColor = "#0A7EED"}
-                                        onBlur={(e) => e.target.style.borderColor = "#E5E7EB"}
                                     />
+                                    {phoneError && (
+                                        <p className="mt-2 text-sm text-red-600">{t("form.phone.invalid")}</p>
+                                    )}
                                 </div>
 
                                 <div>
@@ -211,8 +225,8 @@ const ContactSection = () => {
                                 </div>
                                 <div className="flex-1">
                                     <h3 className="text-2xl font-bold text-gray-900 mb-3">{t("info.email.title")}</h3>
-                                    <a href="mailto:atlant-fortuna@mail.ru" className="text-xl font-semibold" style={{ color: "#0A7EED" }}>
-                                        atlant-fortuna@mail.ru
+                                    <a href="mailto:atlantfortuna@gmail.com" className="text-xl font-semibold" style={{ color: "#0A7EED" }}>
+                                        atlantfortuna@gmail.com
                                     </a>
                                 </div>
                             </div>

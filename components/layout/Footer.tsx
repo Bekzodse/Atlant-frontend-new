@@ -8,6 +8,8 @@ import {useParams} from "next/navigation";
 
 const Footer = () => {
     const t = useTranslations("footer");
+    const tContacts = useTranslations("footer.contacts");
+    const phones = tContacts.raw("phones") as string[];
     const params = useParams();
     const locale = (params?.locale as string) || "ru";
     return (
@@ -55,9 +57,19 @@ const Footer = () => {
                             <MdLocationOn className="mt-1" />
                             <span>{t("contacts.address")}</span>
                         </li>
-                        <li className="flex items-center gap-2">
-                            <FaPhoneAlt /> {t("contacts.phone")}
+                        <li className="flex flex-col gap-2">
+                            {phones.map((phone, index) => (
+                                <a
+                                    key={index}
+                                    href={`tel:${phone}`}
+                                    className="flex items-center gap-2"
+                                >
+                                    <FaPhoneAlt />
+                                    <span>{phone}</span>
+                                </a>
+                            ))}
                         </li>
+
                         <li className="flex items-center gap-2">
                             <HiOutlineMail /> {t("contacts.email")}
                         </li>

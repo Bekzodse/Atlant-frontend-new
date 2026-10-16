@@ -158,7 +158,8 @@
       },
       "phone": {
         "label": "Phone",
-        "placeholder": "+998 XX XXX XX XX"
+        "placeholder": "+998 XX XXX XX XX",
+        "invalid": "Enter a valid phone number"
       },
       "message": {
         "label": "Message",
@@ -238,7 +239,11 @@
       "terminal": {
         "title": "UzCard / HUMO Terminal",
         "desc": "Card payment at sales office",
-        "tags": ["UzCard", "HUMO", "Instant Payment"]
+        "tags": [
+          "UzCard",
+          "HUMO",
+          "Instant Payment"
+        ]
       },
       "online": {
         "title": "Online Payment (Click)",
@@ -259,19 +264,32 @@
         "price": "100,000 UZS",
         "desc": "Delivery to all regions of Uzbekistan",
         "calculateCost": "Calculate Cost",
-        "tags": ["Fast Delivery", "Cargo Tracking", "All Regions"]
+        "tags": [
+          "Fast Delivery",
+          "Cargo Tracking",
+          "All Regions"
+        ]
       },
       "pickup": {
         "title": "Pickup",
         "price": "Free",
         "desc": "Pick up goods at any office",
-        "locations": ["Bukhara, Kagan", "Tashkent", "Karshi", "Urgench"]
+        "locations": [
+          "Bukhara, Kagan",
+          "Tashkent",
+          "Karshi",
+          "Urgench"
+        ]
       },
       "transport": {
         "title": "Transport Company",
         "price": "from 1,000,000 UZS",
         "desc": "Delivery of large equipment",
-        "tags": ["Free Loading", "Unloading at Buyer's Expense", "Freight Transport"]
+        "tags": [
+          "Free Loading",
+          "Unloading at Buyer's Expense",
+          "Freight Transport"
+        ]
       }
     }
   },
@@ -370,10 +388,52 @@
     "contacts": {
       "title": "Contacts",
       "address": "Bukhara region, Kagan city, Mahmud Torobiy str., 183",
-      "phone": "+998 99 707 00 59",
-      "email": "atlant-fortuna@mail.ru"
+      "phones": [
+        "+998 78 707 80 90",
+        "+998 99 707 29 99",
+        "+998 99 707 33 44"
+      ],
+      "email": "atlantfortuna@gmail.com"
     },
     "copyright": "© 2025 Atlant Fortuna LLC",
-    "createWebsite": "Create a website for free"
+    "createWebsite": ""
+  },
+  "quickOrder": {
+    "title": "I want to buy",
+    "subtitle": "Leave your contacts and we'll reach out to you",
+    "name": {
+      "label": "Your name",
+      "placeholder": "Enter your name"
+    },
+    "phone": {
+      "label": "Phone",
+      "placeholder": "+998 XX XXX XX XX",
+      "invalid": "Enter a valid phone number"
+    },
+    "message": {
+      "label": "Comment (optional)",
+      "placeholder": "What are you interested in?"
+    },
+    "submit": "Send request",
+    "submitting": "Sending...",
+    "success": {
+      "title": "Thank you!",
+      "message": "We'll contact you shortly!"
+    },
+    "error": {
+      "title": "Something went wrong",
+      "message": "We couldn't send your request. Please try again or call us directly."
+    }
+  },
+  "cart": {
+    "title": "Cart",
+    "empty": "Your cart is empty",
+    "browseCatalog": "Browse catalog",
+    "quantity": "Qty",
+    "remove": "Remove",
+    "total": "Total",
+    "checkout": "Submit request",
+    "backToCart": "Back to cart",
+    "addedToCart": "Added to cart"
   }
 }

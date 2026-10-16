@@ -9,6 +9,8 @@ import {Sheet, SheetContent, SheetTitle, SheetTrigger, SheetHeader} from "@/comp
 import {useState} from "react";
 import { useTranslations } from "next-intl";
 import LanguageSwitcher from "@/components/shared/LanguageSwitcher";
+import CartDrawer from "@/components/shared/CartDrawer";
+import { useCart } from "@/lib/context/CartContext";
 
 
 const Navbar = () => {
@@ -20,6 +22,7 @@ const Navbar = () => {
     const [isSheetOpen, setIsSheetOpen] = useState(false);
     const [isMobileSearchOpen, setIsMobileSearchOpen] = useState(false);
     const [searchQuery, setSearchQuery] = useState("");
+    const { totalItems, openCart } = useCart();
 
     const runSearch = (query: string) => {
         const trimmed = query.trim();
@@ -103,7 +106,19 @@ const Navbar = () => {
                     {/* Buttons */}
                     <div className={"flex items-center justify-between gap-3"}>
                         <LanguageSwitcher />
-                        <FiShoppingCart className={"w-6 h-6 text-primary hover:text-primary/50"}/>
+                        <button
+                            type={"button"}
+                            aria-label={"Cart"}
+                            onClick={openCart}
+                            className={"relative"}
+                        >
+                            <FiShoppingCart className={"w-6 h-6 text-primary hover:text-primary/50"}/>
+                            {totalItems > 0 && (
+                                <span className={"absolute -top-2 -right-2 bg-red-500 text-white text-xs font-bold rounded-full w-5 h-5 flex items-center justify-center"}>
+                                    {totalItems}
+                                </span>
+                            )}
+                        </button>
                         <button
                             type={"button"}
                             aria-label={t("search")}
@@ -157,6 +172,7 @@ const Navbar = () => {
                     }
                 </div>
             </div>
+            <CartDrawer />
         </div>
     )
 }

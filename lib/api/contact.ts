@@ -4,6 +4,7 @@ export interface ContactRequestPayload {
   name: string;
   phone: string;
   message: string;
+  type?: "GENERAL" | "PURCHASE";
 }
 
 export async function submitContactRequest(

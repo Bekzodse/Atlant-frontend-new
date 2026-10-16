@@ -6,6 +6,8 @@ import useSWR from "swr";
 import Image from "next/image";
 import { fetchProductById, formatPrice, ProductResponseDTO } from "@/lib/api/products";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
+import { useCart } from "@/lib/context/CartContext";
+import Link from "next/link";
 
 const ProductDetail = () => {
     const params = useParams();
@@ -14,6 +16,7 @@ const ProductDetail = () => {
     const t = useTranslations("product");
 
     const [selectedImageIndex, setSelectedImageIndex] = useState(0);
+    const { addItem, openCart } = useCart();
 
     // Fetch product data with SWR
     const { data: product, error, isLoading } = useSWR(
@@ -147,18 +150,27 @@ const ProductDetail = () => {
 
                     {/* Action Buttons */}
                     <div className="flex flex-wrap gap-4 mb-6">
-                        <button className="bg-blue-600 text-white px-6 py-2 rounded-full font-semibold hover:bg-blue-700 transition">
+                        <button
+                            onClick={() => {
+                                addItem(product);
+                                openCart();
+                            }}
+                            className="bg-blue-600 text-white px-6 py-2 rounded-full font-semibold hover:bg-blue-700 transition"
+                        >
                             {t("buyButton")}
                         </button>
-                        <button className="border border-blue-600 text-blue-600 px-6 py-2 rounded-full font-semibold hover:bg-blue-600 hover:text-white transition">
+                        <button
+                            onClick={() => addItem(product)}
+                            className="border border-blue-600 text-blue-600 px-6 py-2 rounded-full font-semibold hover:bg-blue-600 hover:text-white transition"
+                        >
                             {t("addToCart")}
                         </button>
-                        <button className="border border-blue-600 text-blue-600 px-6 py-2 rounded-full font-semibold hover:bg-blue-600 hover:text-white transition">
+                        <Link
+                            href={`/${locale}/contact`}
+                            className="border border-blue-600 text-blue-600 px-6 py-2 rounded-full font-semibold hover:bg-blue-600 hover:text-white transition"
+                        >
                             {t("contact")}
-                        </button>
-                        <button className="text-3xl text-gray-400 hover:text-red-500 transition">
-                            ♡
-                        </button>
+                        </Link>
                     </div>
                 </div>
             </div>

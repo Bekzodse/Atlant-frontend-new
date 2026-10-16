@@ -103,8 +103,8 @@ const AccordionAbout = () => {
 
                 <iframe
                     className="mx-auto mt-10 rounded-md w-72 h-50 md:w-[780px] md:h-[410px]"
-                    src="https://www.youtube.com/embed/0rhml4OCWdo"
-                    title="25 ноября 2024 г."
+                    src="https://youtu.be/0OcD0u27Bqg?si=eo6IsRQ-ATQanpUb"
+                    title="23 may 2026 г."
                     frameBorder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                     referrerPolicy="strict-origin-when-cross-origin"
