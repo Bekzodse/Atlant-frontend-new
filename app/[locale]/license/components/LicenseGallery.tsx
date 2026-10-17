@@ -4,7 +4,7 @@ import { X, Download, ZoomIn, ChevronLeft, ChevronRight } from "lucide-react";
 import { useTranslations } from "next-intl";
 import { useParams } from "next/navigation";
 import useSWR from "swr";
-import { fetchLicenses, getDownloadUrl, LicenseResponseDTO } from "@/lib/api/licenses";
+import { fetchLicenses, getDownloadUrl } from "@/lib/api/licenses";
 
 type LicenseType = {
     id: string;
@@ -12,6 +12,13 @@ type LicenseType = {
     fileId: string;
     title: string;
 };
+
+const localLicenses: LicenseType[] = [
+    { id: "local-license-1", src: "/images/license1.jpg", fileId: "/images/license1.jpg", title: "License 1" },
+    { id: "local-license-2", src: "/images/license2.jpg", fileId: "/images/license2.jpg", title: "License 2" },
+    { id: "local-license-3", src: "/images/license3.jpg", fileId: "/images/license3.jpg", title: "License 3" },
+    { id: "local-license-4", src: "/images/license4.jpg", fileId: "/images/license4.jpg", title: "License 4" },
+];
 
 const LicenseGallery = () => {
     const t = useTranslations("licenses");
@@ -40,7 +47,7 @@ const LicenseGallery = () => {
             fileId: license.image.id,
             title: license.title
         }))
-        : [];
+        : localLicenses;
 
     const openModal = (img: LicenseType) => {
         setSelectedImage(img);
@@ -66,7 +73,9 @@ const LicenseGallery = () => {
     };
 
     const handleDownload = (fileId: string, title: string) => {
-        const downloadUrl = getDownloadUrl(fileId);
+        const downloadUrl = fileId.startsWith("/")
+            ? fileId
+            : getDownloadUrl(fileId);
         const link = document.createElement("a");
         link.href = downloadUrl;
         link.download = `${title}.pdf`;
@@ -78,42 +87,42 @@ const LicenseGallery = () => {
 
     return (
         <>
-            <div className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-50 py-16 px-4 sm:px-6 lg:px-8">
-                <div className="max-w-7xl mx-auto">
-                    <div className="text-center mb-16 animate-fade-in">
-                        <h1 className="text-5xl md:text-6xl font-bold text-blue-600 mb-4  from-blue-600 to-blue-600">
+            <div className="min-h-screen bg-slate-50 px-4 py-12 sm:px-6 lg:px-8">
+                <div className="mx-auto max-w-7xl">
+                    <div className="mx-auto mb-10 max-w-2xl text-center">
+                        <h1 className="mb-3 text-3xl font-bold text-slate-900 sm:text-4xl">
                             {t("title")}
                         </h1>
-                        <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+                        <p className="mx-auto max-w-xl text-base leading-6 text-slate-500">
                             {t("subtitle")}
                         </p>
-                        <div className="mt-6 h-1 w-24 bg-gradient-to-r"></div>
+                        <div className="mx-auto mt-5 h-1 w-12 rounded-full bg-blue-600" />
                     </div>
 
                     {isLoading ? (
-                        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                        <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
                             {Array.from({ length: 4 }).map((_, index) => (
-                                <div key={index} className="bg-white rounded-2xl shadow-lg overflow-hidden animate-pulse">
-                                    <div className="h-72 bg-gray-200"></div>
-                                    <div className="p-6">
+                                <div key={index} className="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm animate-pulse">
+                                    <div className="h-80 bg-slate-200"></div>
+                                    <div className="p-5">
                                         <div className="h-6 bg-gray-200 rounded w-3/4"></div>
                                     </div>
                                 </div>
                             ))}
                         </div>
                     ) : (
-                        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                        <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
                         {images.map((img, index) => (
                             <div
                                 key={img.id}
-                                className="group relative bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 overflow-hidden transform hover:-translate-y-2 animate-slide-up"
+                                className="group relative overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm transition-shadow duration-300 hover:shadow-md"
                                 style={{ animationDelay: `${index * 100}ms` }}
                             >
-                                <div className="relative h-72 overflow-hidden bg-gradient-to-br from-gray-100 to-gray-200">
+                                <div className="relative z-10 h-80 overflow-hidden bg-white">
                                     <img
                                         src={img.src}
                                         alt={img.title}
-                                        className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                                        className="h-full w-full object-contain p-3 transition-transform duration-300 group-hover:scale-[1.02]"
                                         loading="lazy"
                                     />
 
@@ -139,8 +148,8 @@ const LicenseGallery = () => {
 
                                 </div>
 
-                                <div className="p-6">
-                                    <h3 className="text-lg font-bold text-gray-900 mb-2 group-hover:text-blue-500 transition-colors">
+                                <div className="p-4">
+                                    <h3 className="line-clamp-2 text-base font-semibold text-slate-900 group-hover:text-blue-600 transition-colors">
                                         {img.title}
                                     </h3>
                                 </div>

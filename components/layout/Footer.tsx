@@ -13,29 +13,30 @@ const Footer = () => {
     const params = useParams();
     const locale = (params?.locale as string) || "ru";
     return (
-        <footer className="bg-gray-700 text-white">
-            <div className="max-w-7xl mx-auto px-6 py-10 grid grid-cols-1 md:grid-cols-3 gap-8">
+        <footer className="bg-gray-800 text-white">
+            <div className="mx-auto grid max-w-7xl grid-cols-1 gap-10 px-6 py-12 md:grid-cols-3">
                 <div>
                     <h3 className="text-lg font-semibold mb-3">{t("callToAction.title")}</h3>
-                    <p className="text-sm text-gray-200 mb-4">
+                    <p className="mb-5 max-w-sm text-sm leading-6 text-gray-300">
                         {t("callToAction.description")}
                     </p>
                     <Link
                         href={`/${locale}/contact`}
-                        className="inline-block bg-blue-600 hover:bg-blue-700 text-white px-5 py-2 rounded-full transition-all"
+                        className="inline-block rounded-full bg-blue-600 px-6 py-3 font-medium text-white transition-colors hover:bg-blue-700"
                     >
                         {t("callToAction.button")}
                     </Link>
                 </div>
 
-                <div className="flex flex-col items-start md:items-center">
-                    <h3 className="text-lg font-semibold mb-3">{t("social.title")}</h3>
-                    <div className="flex gap-4 text-2xl">
+                <div className="md:justify-self-center">
+                    <h3 className="mb-4 text-lg font-semibold">{t("social.title")}</h3>
+                    <div className="flex gap-3 text-2xl">
                         <a
-                            href="https://www.instagram.com/atlant_fortuna"
+                            href="https://www.instagram.com/suv_filtr_atlant"
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="hover:text-blue-400 transition-colors"
+                            aria-label="Instagram"
+                            className="rounded-full bg-gray-700 p-3 transition-colors hover:bg-pink-600"
                         >
                             <FaInstagram />
                         </a>
@@ -43,7 +44,8 @@ const Footer = () => {
                             href="https://t.me/suv_filtrlari"
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="hover:text-blue-400 transition-colors"
+                            aria-label="Telegram"
+                            className="rounded-full bg-gray-700 p-3 transition-colors hover:bg-sky-600"
                         >
                             <FaTelegramPlane />
                         </a>
@@ -52,7 +54,7 @@ const Footer = () => {
 
                 <div>
                     <h3 className="text-lg font-semibold mb-3">{t("contacts.title")}</h3>
-                    <ul className="space-y-2 text-sm text-gray-200">
+                    <ul className="space-y-3 text-sm leading-5 text-gray-300">
                         <li className="flex items-start gap-2">
                             <MdLocationOn className="mt-1" />
                             <span>{t("contacts.address")}</span>
@@ -77,11 +79,11 @@ const Footer = () => {
                 </div>
             </div>
 
-            <div className="bg-gray-800 py-3 text-center text-sm text-gray-300 flex flex-col md:flex-row justify-between items-center px-6">
+            <div className="flex flex-col items-center justify-between gap-2 border-t border-gray-700 bg-gray-900 px-6 py-4 text-center text-sm text-gray-400 md:flex-row">
                 <p>{t("copyright")}</p>
-                <a href="#" className="hover:text-blue-400 transition-colors text-sm mt-2 md:mt-0">
+                <span className="text-xs">
                     {t("createWebsite")}
-                </a>
+                </span>
             </div>
         </footer>
     )

@@ -260,7 +260,8 @@ const ContactSection = () => {
                     </div>
                 </div>
 
-                {/* Team Section */}
+                {false && (
+                /* Team Section */
                 <div>
                     <div className="text-center mb-12">
                         <h2 className="text-4xl font-bold mb-4" style={{ color: "#0A7EED" }}>
@@ -324,6 +325,7 @@ const ContactSection = () => {
                         </div>
                     )}
                 </div>
+                )}
             </div>
 
             {/* Call Confirmation Modal */}

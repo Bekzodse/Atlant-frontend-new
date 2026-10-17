@@ -14,6 +14,16 @@
     "search": "Qidiruv"
   },
   "home": {
+    "reels": {
+      "title": "Bizning ishlarimizni ko'rishingiz mumkin",
+      "subtitle": "Ish jarayonlarimiz va o'rnatilgan uskunalarimizdan lavhalar",
+      "label": "Reels",
+      "following": "Kuzatish",
+      "description": "Sifatli suv tozalash yechimlari va ish jarayonlarimiz.",
+      "likes": "10M",
+      "comments": "120K",
+      "empty": "Hozircha videolar joylanmagan."
+    },
     "benefits": {
       "title": "Biz bilan ishlashning afzalliklari",
       "cards": [
@@ -299,7 +309,8 @@
   },
   "discounts": {
     "title": "Aksiyalar va maxsus takliflar",
-    "underConstruction": "Sahifa ishlab chiqilmoqda"
+    "underConstruction": "Sahifa ishlab chiqilmoqda",
+    "comingSoon": "Tez orada yangi aksiyalar e’lon qilinadi"
   },
   "licenses": {
     "title": "Litsenziya Sertifikatlari",

@@ -14,6 +14,16 @@
     "search": "Search"
   },
   "home": {
+    "reels": {
+      "title": "You can see our work",
+      "subtitle": "Scenes from our work and installed equipment",
+      "label": "Reels",
+      "following": "Following",
+      "description": "Quality water purification solutions and scenes from our work.",
+      "likes": "10M",
+      "comments": "120K",
+      "empty": "No videos have been uploaded yet."
+    },
     "benefits": {
       "title": "Advantages of Working With Us",
       "cards": [
@@ -299,7 +309,8 @@
   },
   "discounts": {
     "title": "Discounts & Special Offers",
-    "underConstruction": "Page under construction"
+    "underConstruction": "Page under construction",
+    "comingSoon": "New offers will be announced soon"
   },
   "licenses": {
     "title": "License Certificates",
